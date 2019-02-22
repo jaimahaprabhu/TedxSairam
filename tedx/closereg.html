@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
+    <title> Tedx</title>
+  	<link rel="icon" type="image/png" href="assets/img/T+Favicon-07.png" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts Icon CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/et-line.css" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <!-- Carousel CSS -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    	<link rel="stylesheet" href="css/main-7948827cd5.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+<style>
+    .resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+    .resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+#blur_overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+}
+    </style>
+    </head>
+<body>
+<!--header start here -->
+<header class="header navbar blur_overlay fixed-top navbar-expand-md">
+    <div class="container">
+        <a class=" logo" href="index.html">
+            <img src="assets/img/TEDxlogoOFFLtransWhite.png" alt="Tedx"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-text-align-right"></span>
+        </button>
+    </div>
+</header>
+<!--header end here-->
+
+<!--cover section slider -->
+<section id="home" >
+
+<div id="wowslider-container1">
+  
+	<div class="ws_images" style="background-color:#1d1e21"><ul>
+		<li><img src="data1/images/thankyou.jpg" alt="thaks"  id="wows1_0"/></li>
+		
+	</ul></div>
+	<div class="ws_shadow"></div>
+	</div>	
+
+	
+</section>
+
+  <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-calendar-outline"></i>
+                    <div class="content">
+                        <h5 class="box_title">
+                            Date
+                        </h5>
+                        <p>
+                            5th October 2018
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-location-outline"></i>
+                    <div class="content">
+                        <h5 class="box_title">
+                            Location
+                        </h5>
+                        <p>
+                          Sri Sai Ram Engineering College.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-person-outline"></i>
+                    <div class="content">
+                        <h5 class="box_title">
+                            Speakers
+                        </h5>
+                        <p>
+                           12+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-pricetag-outline"></i>
+                    <div class="content">
+                        <h5 class="box_title">
+                            tickets
+                        </h5>
+                        <p>
+                            register above
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--event count down end-->
+<script>
+    $(window).scroll(function(event){var scroll=$(window).scrollTop();if(scroll>$(window).height()){clearInterval(window.slidechange);$("#tick").css({display:"inline-block"});setTimeout(function(){$("#tick").css({animation:"fadein 0.4s forwards",background:"#d11",padding:"14px 6px","margin-top":"-14px"})},400)}else if(scroll<$(window).height()-200){if($("#tick").css("display")!="none"){$("#tick").css({animation:"fadeout .4s forwards"});setTimeout(function(){$("#tick").css({display:"none"})},500)}}else if(scroll==0){startslideshow()}if(timer!==null){$("#buy_mobile").css({transform:"translateX(100px) rotateZ(360deg)",opacity:"0"});clearTimeout(timer)}timer=setTimeout(function(){$("#buy_mobile").css({transform:"translateX(0) rotateZ(0deg)",opacity:"1"})},200)});function navigate(direction){clearInterval(window.slidechange);var ele;if(direction=="forwards"){ele=$("#slideshow > div:first").fadeOut(400).next()}else{ele=$("#slideshow > div:first").fadeOut(400).parent().children().last()}ele.find("h2").css({animation:"slidein .5s 1.5s ease-out 1","animation-fill-mode":"forwards"});ele.find("div").css({animation:"slidein .5s 1.7s ease-out 1","animation-fill-mode":"forwards"});
+</script>
+<!-- jquery -->
+    	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<!-- bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<!--slick carousel -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!--parallax -->
+<script src="assets/js/parallax.min.js"></script>
+<!--Counter up -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!--Counter down -->
+<script src="assets/js/jquery.countdown.min.js"></script>
+<!-- WOW JS -->
+<script src="assets/js/wow.min.js"></script>
+<!-- Custom js -->
+<script src="assets/js/main.js"></script>
+
+</body>
+<!--footer end -->
+
+</html>
